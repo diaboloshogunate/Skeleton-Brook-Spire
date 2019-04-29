@@ -29,6 +29,7 @@ public class Bullet : MonoBehaviour
         {
             this.velocity = Vector2.zero;
             EnemyController enemy = collision.gameObject.GetComponent<EnemyController>();
+            if(enemy == null) { return; }
             enemy.Dmg(1f);
         }
     }

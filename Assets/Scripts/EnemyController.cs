@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
+    [SerializeField]
     private float health = 1f;
     private float maxHealth = 10f;
 

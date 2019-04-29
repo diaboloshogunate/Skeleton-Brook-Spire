@@ -15,13 +15,4 @@ public class Damage : MonoBehaviour
             player.Dmg(this.dmg, collision.transform.position - this.transform.position);
         }
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            PlayerController player = collision.gameObject.GetComponent<PlayerController>();
-            player.Dmg(this.dmg, collision.transform.position - this.transform.position);
-        }
-    }
 }

@@ -21,7 +21,7 @@ public class AnyKeyChangeScene : MonoBehaviour
 
     void Update()
     {
-        if(!Input.GetKey(KeyCode.Escape) && Input.anyKey)
+        if(!Input.GetKey(KeyCode.Escape) && Input.anyKeyDown)
         {
             this.audio.PlayOneShot(this.selectSFX);
             this.sceneChange.FadeToLevel(this.nextScene);
